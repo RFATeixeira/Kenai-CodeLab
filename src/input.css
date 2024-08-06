@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body {
+    @apply font-body;
+  }
+  .btnPrimary {
+    @apply bg-brand-color-10 font-bold text-xl py-[10px] px-[38px] rounded border-2 border-brand-color-10 hover:bg-black/50 hover:text-brand-color-10 transition duration-300 w-full;
+  }
+  .category {
+    @apply bg-dark-20 rounded-tr-lg rounded-bl-lg w-min px-2 py-1 font-semibold text-brand-color-10;
+  }
+  .profileCard {
+    @apply flex flex-col items-center gap-10 w-[280px] py-12 hover:bg-dark-20 rounded-lg transition duration-300;
+  }
+  .profileCardImgBox {
+    @apply w-[176px] h-[176px] rounded-full overflow-hidden;
+  }
+  .profileCardImg {
+    @apply group-hover:scale-110 transition duration-300;
+  }
+  .profileCardName {
+    @apply text-[32px] text-white;
+  }
+  .card {
+    @apply h-[256px] w-[168px] lg:w-[230px] lg:h-[400px] bg-cover bg-no-repeat bg-center relative hover:scale-105 transition duration-300 rounded;
+  }
+  .cardInfo {
+    @apply h-[77px] bottom-8 left-6 absolute;
+  }
+  .cardInfoInner {
+    @apply flex flex-col gap-2;
+  }
+  .cardStarsBox {
+    @apply flex flex-row gap-[6px];
+  }
+  .cardStarSize {
+    @apply w-[16px] h-[16px];
+  }
+  .cardTitle {
+    @apply text-xl font-semibold text-white;
+  }
+  .starHero {
+    @apply w-[18px] h-[18px] lg:w-[22px] lg:h-[22px];
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
