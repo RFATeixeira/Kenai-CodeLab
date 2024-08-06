@@ -15,16 +15,16 @@
     @apply bg-dark-20 rounded-tr-lg rounded-bl-lg w-min px-2 py-1 font-semibold text-brand-color-10;
   }
   .profileCard {
-    @apply flex flex-col items-center gap-10 w-[280px] py-12 hover:bg-dark-20 rounded-lg transition duration-300;
+    @apply flex flex-col items-center gap-4 lg:gap-10 w-[150px] lg:w-[280px] py-4 lg:py-12 hover:bg-dark-20 rounded-lg transition duration-300;
   }
   .profileCardImgBox {
-    @apply w-[176px] h-[176px] rounded-full overflow-hidden;
+    @apply w-[120px] h-[120px] lg:w-[176px] lg:h-[176px] rounded-full overflow-hidden;
   }
   .profileCardImg {
     @apply group-hover:scale-110 transition duration-300;
   }
   .profileCardName {
-    @apply text-[32px] text-white;
+    @apply text-[18px] lg:text-[32px] text-white;
   }
   .card {
     @apply h-[256px] w-[168px] lg:w-[230px] lg:h-[400px] bg-cover bg-no-repeat bg-center relative hover:scale-105 transition duration-300 rounded;
