@@ -720,9 +720,15 @@ video {
 
 .cardInfo{
   position: absolute;
-  bottom: 2rem;
-  left: 1.5rem;
-  height: 77px;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+@media (min-width: 1024px){
+  .cardInfo{
+    bottom: 2rem;
+    left: 1.5rem;
+  }
 }
 
 .cardInfoInner{
@@ -734,20 +740,42 @@ video {
 .cardStarsBox{
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 4px;
+}
+
+@media (min-width: 1024px){
+  .cardStarsBox{
+    gap: 6px;
+  }
 }
 
 .cardStarSize{
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 10px;
+}
+
+@media (min-width: 1024px){
+  .cardStarSize{
+    height: 16px;
+    width: 16px;
+  }
 }
 
 .cardTitle{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .cardTitle{
+    margin-top: 14px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .starHero{
@@ -2050,10 +2078,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
 .gap-24{
   gap: 6rem;
 }
@@ -3062,6 +3086,10 @@ video {
   font-size: 64px;
 }
 
+.text-\[8px\]{
+  font-size: 8px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -3959,11 +3987,6 @@ video {
     row-gap: 8rem;
   }
 
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .md\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -4105,8 +4128,8 @@ video {
     height: 746px;
   }
 
-  .lg\:w-\[1240px\]{
-    width: 1240px;
+  .lg\:w-\[1220px\]{
+    width: 1220px;
   }
 
   .lg\:w-\[216px\]{
@@ -4123,14 +4146,6 @@ video {
 
   .lg\:w-\[596\.23px\]{
     width: 596.23px;
-  }
-
-  .lg\:w-\[1230px\]{
-    width: 1230px;
-  }
-
-  .lg\:w-\[1220px\]{
-    width: 1220px;
   }
 
   .lg\:max-w-\[1216px\]{
@@ -4189,6 +4204,14 @@ video {
     justify-content: space-around;
   }
 
+  .lg\:gap-20{
+    gap: 5rem;
+  }
+
+  .lg\:gap-24{
+    gap: 6rem;
+  }
+
   .lg\:gap-4{
     gap: 1rem;
   }
@@ -4201,14 +4224,6 @@ video {
     gap: 26px;
   }
 
-  .lg\:gap-24{
-    gap: 6rem;
-  }
-
-  .lg\:gap-20{
-    gap: 5rem;
-  }
-
   .lg\:bg-transparent{
     background-color: transparent;
   }
@@ -4216,21 +4231,6 @@ video {
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .lg\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .lg\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .lg\:px-10{
@@ -4280,6 +4280,11 @@ video {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .lg\:leading-\[60px\]{
