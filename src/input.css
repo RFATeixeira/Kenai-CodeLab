@@ -39,7 +39,7 @@
     @apply flex flex-row gap-[2px];
   }
   .cardStarSize {
-    @apply w-[12px] h-[12px] lg:w-[16px] lg:h-[16px];
+    @apply w-[14px] h-[14px] lg:w-[20px] lg:h-[20px];
   }
   .cardTitle {
     @apply text-xs lg:text-xl font-semibold text-white mt-[8px] lg:mt-[14px];
