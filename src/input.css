@@ -36,10 +36,10 @@
     @apply flex flex-col gap-2;
   }
   .cardStarsBox {
-    @apply flex flex-row gap-[4px] lg:gap-[6px];
+    @apply flex flex-row gap-[2px];
   }
   .cardStarSize {
-    @apply w-[10px] h-[10px] lg:w-[16px] lg:h-[16px];
+    @apply w-[12px] h-[12px] lg:w-[16px] lg:h-[16px];
   }
   .cardTitle {
     @apply text-xs lg:text-xl font-semibold text-white mt-[8px] lg:mt-[14px];
@@ -59,4 +59,19 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+}
+
+.avaliacao .star {
+  filter: saturate(0) brightness(2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.avaliacao:hover .star,
+.avaliacao .star.ranked {
+  filter: saturate(1) brightness(1);
+}
+
+.avaliacao .star:hover ~ .star {
+  filter: saturate(0) brightness(2);
 }

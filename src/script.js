@@ -19,3 +19,17 @@ const menu = document.getElementById("menu");
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
+
+const stars = document.querySelectorAll(".star");
+
+stars.forEach((star, clickedStar) => {
+  star.onclick = () => {
+    stars.forEach((currentStar, currentIndex) => {
+      if (currentIndex <= clickedStar) {
+        currentStar.classList.add("ranked");
+      } else if (currentIndex >= clickedStar) {
+        currentStar.classList.remove("ranked");
+      }
+    });
+  };
+});
